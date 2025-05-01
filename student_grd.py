@@ -308,7 +308,7 @@ if feature_to_discretize:
     plt.subplot(1, 2, 1)
     sns.histplot(df_cleaned[feature_to_discretize], kde=True)
     plt.title(f'Original: {feature_to_discretize}')
-    
+    # here it is
     plt.subplot(1, 2, 2)
     sns.countplot(x=df_cleaned[f'{feature_to_discretize}_Discretized'])
     plt.title(f'Discretized: {feature_to_discretize}')
